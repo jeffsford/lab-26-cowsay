@@ -10,11 +10,10 @@ class App extends React.Component {
     super(props)
     this.state = {
       content: cowsay.say({
-        text: "I'm a talking cow!",
-        e: "oO",
-        T: "U "
+        text: 'I am a talking cow!'
       })
     }
+
     this.handleClick = this.handleClick.bind(this)
   }
 
@@ -22,9 +21,7 @@ class App extends React.Component {
       this.setState((state) => {
       return {
       content: cowsay.say({
-        text: faker.lorem.sentence(),
-        e: "oO",
-        T: "U "
+        text: faker.lorem.sentence()
       }),
     }
   })
@@ -34,8 +31,8 @@ class App extends React.Component {
       return (
         <div>
           <h1>Generate Cowsay Lorem</h1>
+          <pre>{this.state.content}</pre>
             <button onClick={this.handleClick}> click me </button>
-            <pre>{this.state.content}</pre>
         </div>
     )
   }
