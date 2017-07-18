@@ -1,7 +1,7 @@
 'use strict';
 
-const HtmlPlugin = require('html-webpack-plugin');
-const ExtractPlugin = require('extract-text-webpack-plugin');
+const HtmlPlugin = require('html-webpack-plugin')
+const ExtractPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
   entry: `${__dirname}/src/main.js`,
